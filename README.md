@@ -17,7 +17,7 @@ This makes it suitable for real-world deployment where only the image is availab
 ## Summary
 
 - Uses modern **image embeddings** + **multitask MLP** architectue  
-- Trains with **blind experiments**, matching the Kaggle validation pipeline  
+- Trains with **blind experiments** 
 - Includes **full training pipeline** (`train.py`)  
 - Includes **inference script producing submission files** (`predict.py`)  
 - Modularized in `src/` for clarity and maintainability  
