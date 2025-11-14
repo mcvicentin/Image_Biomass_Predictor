@@ -38,26 +38,33 @@ project/
 │ │ ├── train.csv
 │ │ └── test.csv
 │ └── external/
-│ └── embeddings/
-│ └── image_embeddings.csv
+│  └── embeddings/
+│   └── image_embeddings.csv
 │
 ├── src/
 │ ├── train/
 │ │ ├── train.py ← training pipeline (from notebook)
 │ │ └── predict.py ← inference pipeline
 │ │
-│ ├── models/
+│ ├── model/
 │ │ └── model.py ← ImageOnlyMultitaskNet
 │ │
 │ ├── data/
 │ │ └── dataset.py ← PastureImageOnlyDataset
 │ │
 │ └── utils/
-│ └── misc.py ← rmse, weighted-R², helper functions
+│   └── misc.py ← rmse, weighted-R², 
 │
-└── models/
-└── weights/
-└── image_only_ckpt.pt ← saved model checkpoint
+├── notebooks/
+|  ├── 01_EDA.ipynb ← Exploratory analysis
+|  └── 02_featureFusion_and_preModeling.ipynb ← Feature engineering and modeling exploration
+|  └── 03_multimodal_biomass_model.ipynb ← Modeling using full tabular + image data
+|  └── 04_MultimodalModel_TabularDropout.ipynb ← Model and image predictor (src functions)
+|
+└── environment.yaml
+└── Makefile
+└── setup.py
+└── Dockerfile
 ```
 
 
