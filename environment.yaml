@@ -1,0 +1,16 @@
+name: biomass-env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - tqdm
+  - matplotlib
+  - pip
+  - pip:
+      - torch
+
